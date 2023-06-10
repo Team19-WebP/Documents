@@ -1,0 +1,240 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage[italian]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[export]{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{titlepic}
+\usepackage{fixltx2e}
+\usepackage{mathrsfs}  
+\usepackage{mathtools}
+\usepackage{lipsum}
+\usepackage{soul}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{ulem}
+\usepackage{accents}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{fixmath}
+\usepackage{sectsty} 
+\usepackage[margin=30mm, bottom=32mm]{geometry} 
+\usepackage{geometry} 
+\usepackage{changepage} 
+\usepackage[font=footnotesize,labelfont=bf, skip=4pt]{caption} 
+\usepackage{makecell}
+\usepackage{textgreek}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \Large
+        Università degli Studi di Trento
+
+        \vspace{0.5cm}
+
+        \Large
+        Introduzione alla Programmazione per il web
+
+        \includegraphics[width=0.6\textwidth]{logo_home_new.png}
+        
+        \vfill
+
+        \Huge
+        \textbf{Procedura di testing}
+
+        \vspace{0.5cm}
+
+        \Large
+        Strumento 1 - SUS
+
+        \vspace{5cm}
+        
+        \Large
+        \textbf{Gruppo 19}
+
+        \vspace{0.5cm}
+        
+        \Large
+        Anno accademico 2022/23
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\noindent Di seguito viene presentata una procedura di testing finalizzata a valutare il sito web sviluppato per l'associazione \textit{Tum4World} in relazione a diversi criteri di usabilità. In particolare, vengono presi in considerazione: l'apprendimento rapido, la necessità di supporto tecnico, l'organizzazione del sito, la facilità d'uso, l'integrazione delle funzionalità, la coerenza tra le pagine, la necessità di studio preliminare del sito e il comfort durante l'utilizzo.\\
+
+\noindent La procedura di testing coinvolge un gruppo di 100 partecipanti selezionati in base all'età e al profilo professionale, in modo da ottenere un campione di utenti il più possibile omogeneo e garantire quindi la massima affidabilità dei risultati del test. I partecipanti selezionati non hanno familiarità precedente con il sito.
+
+\vspace{0.7cm}
+
+\section{Valutazione dell'apprendimento rapido del sito}
+Per valutare l'apprendimento rapido del sito, è stata scelta una specifica sequenza di operazioni.\\
+Ai partecipanti viene richiesto di condividere un contatto per consentire all'associazione di contattarli in seguito. Il contatto da utilizzare viene indicato dal team di testing:
+\begin{itemize}
+    \item nome: Paolino
+    \item cognome: Paperino
+    \item indirizzo email: paolino.paperino@gmail.com
+\end{itemize}
+Ciascun partecipante ha a disposizione 3 minuti per portare a termine il compito assegnato. Il test è considerato superato se almeno 70 partecipanti sono riusciti a effettuare tutte le operazioni entro il tempo stabilito.\\
+Si noti che ai partecipanti non vengono fornite ulteriori istruzioni oltre a quelle menzionate. È quindi compito del partecipante individuare autonomamente quale pagina selezionare e quali operazioni eseguire.
+
+\vspace{0.7cm}
+
+\section{Valutazione della necessità di supporto tecnico}
+La necessità di supporto tecnico viene valutata attraverso il monitoraggio delle richieste di assistenza effettuate dai partecipanti durante lo svolgimento dell'intero test. Il supporto tecnico è previsto per tutte le fasi della procedura di testing, tranne per la valutazione dell'apprendimento rapido.\\
+Il test è considerato superato se, in media, le richieste di assistenza da parte dei partecipanti sono inferiori a 3 per partecipante.
+
+\vspace{0.7cm}
+
+\section{Valutazione della complessità dell'organizzazione del sito}
+Per valutare l'organizzazione del sito, ai partecipanti è richiesto di individuare una serie di informazioni specifiche all'interno del sito:
+\begin{itemize}
+    \item anno di fondazione;
+    \item nomi delle attività offerte;
+    \item indirizzo email e numero di telefono.
+\end{itemize}
+Ciascun partecipante ha a disposizione 5 minuti per portare a termine il compito assegnato. Il test è considerato superato se almeno 90 partecipanti sono riusciti a trovare tutte le informazioni richieste entro il tempo stabilito.\\
+In seguito, ogni partecipante assegna un voto compreso tra 1 e 5 considerando la seguente scala di valutazione:
+\begin{enumerate}
+    \item l'organizzazione del sito è molto complessa e individuare le informazioni ricercate risulta difficile;
+    \item l'organizzazione del sito è complessa, ciò nonostante le informazioni ricercate si individuano con poche difficoltà;
+    \item il sito è ben organizzato, ma le informazioni ricercate non sono facili da individuare;
+    \item il sito è organizzato molto bene e le informazioni ricercate si individuano facilmente;
+    \item l'organizzazione del sito è ottima e individuare le informazioni ricercate risulta estremamente semplice.
+\end{enumerate}
+L'organizzazione del sito è considerata buona e il test superato se la somma dei voti dei partecipanti è superiore a 350.
+
+\vspace{0.7cm}
+
+\section{Test di usabilità del sito}
+Per valutare l'usabilità del sito, i partecipanti sono invitati a completare una serie di compiti che coinvolgono le principali funzionalità del sito.\\
+Il team di testing mette a disposizione dei partecipanti i seguenti dati:
+\begin{itemize}
+    \item nome: Paperon
+    \item cognome: de Paperoni
+    \item data di nascita: 15/12/1947
+    \item indirizzo email: paperon.depaperoni@gmail.com
+    \item numero di telefono: 0123456789
+    \item tipo di utente: aderente
+    \item username: zio\_Paperone
+    \item password: 3EFGroni!
+\end{itemize}
+A ciascun partecipante è richiesto di effettuare le seguenti operazioni considerando i dati suddetti:
+\begin{itemize}
+    \item effettuare il sign in;
+    \item effettuare il login;
+    \item visualizzare i dati personali;
+    \item iscriversi a una delle attività offerte;
+    \item effettuare una donazione di 50 Euro (operazione fittizia);
+    \item cancellare la propria iscrizione al sito.
+\end{itemize}
+Ogni partecipante ha a disposizione 15 minuti per portare a termine il compito assegnato. Il test è considerato superato se almeno 70 partecipanti sono riusciti a compiere tutte le operazioni richieste entro il tempo stabilito.\\
+Inoltre, ai partecipanti è richiesto di effettuare il sign in utilizzando anche i seguenti dati:
+\begin{itemize}
+    \item nome: John
+    \item cognome: Rockerduck
+    \item data di nascita: 11/12/2011
+    \item indirizzo email: john.rockerduckgmail.com
+    \item numero di telefono: 01234567
+    \item tipo di utente: aderente
+    \item username: Rockerduck
+    \item password: 7EFGduck!
+\end{itemize}
+Si noti che la data di nascita, l'indirizzo email e il numero di telefono non sono validi. Pertanto, i partecipanti sono invitati a correggere i dati inseriti in modo da consentire l'invio del form.\\
+Ogni partecipante ha a disposizione 10 minuti per portare a termine il compito assegnato. Il test è considerato superato se almeno 70 partecipanti riusciranno a inviare il form di sign in entro il tempo stabilito.\\
+Infine, viene considerato un modulo di feedback che presenta le seguenti domande:
+\begin{itemize}
+    \item Effettuare le operazioni risulta semplice e gli errori segnalati dal sito sono chiari ed efficaci?
+    \item Le informazioni inserite nella pagina sign in per facilitare la compilazione del form sono comprensibili?
+    \item I dati personali visualizzati corrispondono a quelli inseriti durante il sign in?
+    \item Cancellare la propria iscrizione al sito risulta semplice e intuitivo? 
+    \item L'iscrizione alle attività offerte risulta facile e veloce?
+\end{itemize}
+Per ciascuna domanda, si può rispondere \textit{sì} oppure \textit{no}. Se il numero di \textit{sì} supera il 70 \% del totale delle risposte, allora il feedback è considerato positivo e il test di usabilità del sito superato.
+
+\vspace{0.7cm}
+
+\section{Valutazione dell'integrazione delle funzionalità del sito}
+Per valutare l'integrazione delle funzionalità del sito, è stato scelto uno specifico flusso di lavoro.\\
+Vengono messi a disposizione dei partecipanti lo username e la password di un amministratore:
+\begin{itemize}
+     \item username: admin
+    \item password: 19Adm1n!
+\end{itemize}
+A ciascun partecipante è richiesto di inserire nella pagina di login lo username e la password dell'amministratore, ed effettuare le seguenti operazioni:
+\begin{itemize}
+    \item visualizzare l'elenco di tutti gli utenti;
+    \item visualizzare l'elenco dei simpatizzanti;
+    \item visualizzare l'elenco degli aderenti;
+    \item visualizzare il numero di visite del sito e l'istogramma delle visite per ogni pagina;
+    \item resettare i contatori;
+    \item visualizzare il grafico delle donazioni.
+\end{itemize}
+Il tempo messo a disposizione di ogni partecipante per portare a termine il compito assegnato è di 15 minuti. È stato scelto un intervallo di tempo ampio per consentire a tutti i partecipanti di eseguire tutte le operazioni richieste senza sentirsi limitati dal tempo.\\
+In seguito, viene fatta la seguente domanda: "Esistono delle funzionalità che svolgono in parte la stessa funzione?". Nel caso di risposta affermativa, si richiede di specificare le funzionalità coinvolte. Se il numero di \textit{no} supera il 70 \% del totale delle risposte, allora il test di integrazione delle funzionalità del sito è considerato superato.
+
+\vspace{0.7cm}
+
+\section{Analisi della coerenza tra le pagine del sito}
+La coerenza tra le pagine del sito viene valutata attraverso un'analisi dettagliata delle varie sezioni. I partecipanti sono invitati a navigare tra le pagine e a individuare eventuali difformità e incongruenze nell'aspetto visivo e nella disposizione dei contenuti, e possibili inconsistenze tra le informazioni fornite.\\
+In particolare, si considera un modulo di feedback con le seguenti domande:
+\begin{itemize}
+    \item Le pagine che forniscono funzionalità simili utilizzano un layout uniforme?
+    \item L'utilizzo dei colori consente un'esperienza coerente e intuitiva?
+    \item La disposizione dei contenuti e l'aspetto visivo del sito risultano armoniosi?
+    \item Il tipo di carattere utilizzato è uniforme in tutte le pagine?
+    \item Le informazioni reperibili dalle varie pagine sono tutte consistenti tra loro?
+\end{itemize}
+Per ciascuna domanda, si può rispondere \textit{sì} oppure \textit{no}. Se il numero di \textit{sì} supera il 70 \% del totale delle risposte, allora il feedback è considerato positivo e il test della coerenza tra le pagine del sito superato.
+
+\vspace{0.7cm}
+
+\section{Valutazione della necessità di studio preliminare del sito}
+La necessità di studio preliminare del sito è valutato attraverso un modulo di feedback che presenta le seguenti domande:
+\begin{itemize}
+    \item La navigazione tra le pagine risulta molto semplice?
+    \item Le funzionalità del sito sono facili da utilizzare e intuitive?
+    \item Il sito è accessibile anche a persone con minori competenze nell'uso del computer?
+    \item I menu di navigazione sono chiari ed esplicativi?
+    \item Il sito ha soddisfatto le aspettative in termini di facilità d'uso?
+    \item Il linguaggio utilizzato nel sito è comprensibile per utenti con diversi livelli di competenze?
+    \item Il layout è intuitivo e facilita la navigazione tra le pagine?
+\end{itemize}
+Queste domande hanno l'obbiettivo di misurare il livello di intuitività e accessibilità del sito.\\
+Prima di rispondere alle domande proposte con \textit{sì} o \textit{no}, i partecipanti devono aver seguito la procedura di testing fino al punto 6. Se il numero di \textit{sì} supera il 70 \% del totale delle risposte, allora il feedback è considerato positivo e il sito non necessita di uno studio preliminare per essere utilizzato in modo efficiente.
+
+\vspace{0.7cm}
+
+\section{Valutazione del comfort durante l'utilizzo del sito}
+Il comfort durante l'utilizzo del sito è valutato attraverso un modulo di feedback che presenta le seguenti domande:
+\begin{itemize}
+    \item L'esperienza complessiva di utilizzo del sito è soddisfacente?
+    \item L'aspetto visivo e il design del sito sono esteticamente piacevoli?
+    \item L'utilizzo dei colori è gradevole alla vista?
+    \item Le informazioni sono facilmente reperibili e organizzate in modo chiaro e intuitivo?
+    \item Il sito risponde alle aspettative degli utenti in termini di funzionalità?
+    \item Il tempo di risposta del sito è rapido, garantendo un'esperienza fluida e senza attese?
+    \item Le funzionalità del sito sono comprensibili e facilmente utilizzabili?
+\end{itemize}
+Prima di rispondere alle domande proposte con \textit{sì} o \textit{no}, i partecipanti devono aver seguito la procedura di testing fino al punto 6. Se il numero di \textit{sì} supera il 70 \% del totale delle risposte, allora il feedback è considerato positivo e il test del comfort durante l'utilizzo del sito è considerato superato.
+
+\end{document}
